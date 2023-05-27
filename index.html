@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Menu Makanan</title>
+</head>
+<body class="bg-yellow-400 overflow-x-hidden">
+
+    <!-- Navbar Section -->
+    <header>
+        <nav class=" drop-shadow-sm fixed top-0 w-full z-10 md:flex md:justify-between md:items-center bg-[#11145B]">
+            <div class=" flex justify-between items-center py-6 mx-6 md:mx-20 text-white">
+                <div class="flex gap-3 items-center">
+                    <img src="./logo brand.svg" alt="">
+                    <span class="text-2xl">Meal Express</span>
+                </div>
+                <button class="mobile-button md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+    
+            <div class="mobile-menu hidden lg:flex border-t-2 border-white md:border-0 text-white">
+                <div class="flex flex-col md:flex-row mx md:mx-20">
+                    <a class="block py-3 hover:text-yellow-300 px-6" href="#Home">Menu</a>
+                    <a class="block py-3 hover:text-yellow-300 px-6" href="#About">Delivery</a>
+                    <a class="block py-3 hover:text-yellow-300 px-6" href="#Skills">Service</a>
+                    <a class="block py-3 hover:text-yellow-300 px-6" href="#Contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Akhir Navbar Section -->
+
+    <!-- Hero Section -->
+    <section style="background-image: url(./hero.jpg);" class="h-[100vh] bg-center md:bg-cover">
+        <div class="pt-[50vh]">
+            <h1 class="text-3xl text-center text-white">Get Delicious Food Delivered, Straight to Your Door</h1>
+            <div class="flex mt-6 mx-auto">
+                <a class="inline-block mx-auto py-3 px-8 text-white bg-[#11145B]" href="">Order Now</a>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Hero Section -->
+
+    <!-- Feature Meal Section -->
+    <section class="mt-12">
+        <div class="mx-6 md:mx-20">
+            <span class="text-3xl text-white font-semibold">Featured Meal</span>
+            <div class="flex flex-col md:flex-row gap-3 mt-36">
+                <!-- Menu 1 -->
+                <div class="mx-auto w-[300px] bg-white rounded-md">
+                    <div class="relative text-center w-full top-[-100px]">
+                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./1.svg" alt="">
+                    </div>
+                    <div class="relative px-6 top-[-55px]">
+                        <h1 class="text-center text-lg font-semibold">Fried Rice</h1>
+                        <div class="flex justify-center gap-2 ">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                        </div>
+                        <p class="mx-auto mt-4 text-center">Fried rice is a popular dish made from cooked rice that is stir-fried with various ingredients such as vegetables, proteins, and seasonings.</p>
+                        <div class="flex justify-between items-center mt-8">
+                            <span class="text-3xl font-bold">$29</span>
+                            <a class="bg-orange-400 inline-block rounded-full py-2 px-6" href="">order now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu 2 -->
+                <div class="mt-24 md:mt-0 mx-auto w-[300px] bg-white rounded-md">
+                    <div class="relative text-center w-full top-[-100px]">
+                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./2.svg" alt="">
+                    </div>
+                    <div class="relative px-6 top-[-55px]">
+                        <h1 class="text-center text-lg font-semibold">Strowberry Pancakes</h1>
+                        <div class="flex justify-center gap-2 ">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                        </div>
+                        <p class="mx-auto mt-4 text-center">A delicious and fruity breakfast dish made with fresh strawberries, flour, eggs, milk, sugar, and baking powder.</p>
+                        <div class="flex justify-between items-center mt-8">
+                            <span class="text-3xl font-bold">$59</span>
+                            <a class="bg-orange-400 inline-block rounded-full py-2 px-6" href="">order now</a>
+                        </div>
+                    </div>
+                    <!-- Menu 3 -->
+                </div>
+                <div class="mt-24 md:mt-0 mx-auto w-[300px] bg-white rounded-md">
+                    <div class="relative text-center w-full top-[-100px]">
+                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./3.svg" alt="">
+                    </div>
+                    <div class="relative px-6 top-[-55px]">
+                        <h1 class="text-center text-lg font-semibold">Ice Cream Sundae</h1>
+                        <div class="flex justify-center gap-2 ">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                        </div>
+                        <p class="mx-auto mt-4 text-center">Made with scoops of ice cream, topped with sweet toppings such as whipped cream, chopped nuts, sprinkles, and a cherry on top.</p>
+                        <div class="flex justify-between items-center mt-8">
+                            <span class="text-3xl font-bold">$39</span>
+                            <a class="bg-orange-400 inline-block rounded-full py-2 px-6" href="">order now</a>
+                        </div>
+                    </div>
+                    <!-- Menu 4 -->
+                </div>
+                <div class="mt-24 md:mt-0 mx-auto w-[300px] bg-white rounded-md">
+                    <div class="relative text-center w-full top-[-100px]">
+                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./4.svg" alt="">
+                    </div>
+                    <div class="relative px-6 top-[-55px]">
+                        <h1 class="text-center text-lg font-semibold">Cinnamon Rolls</h1>
+                        <div class="flex justify-center gap-2 ">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                        </div>
+                        <p class="mx-auto mt-4 text-center">Made with a soft and fluffy dough, rolled out and spread with a mixture of sugar, cinnamon, and butter, and then baked to perfection.</p>
+                        <div class="flex justify-between items-center mt-8">
+                            <span class="text-3xl font-bold">$69</span>
+                            <a class="bg-orange-400 inline-block rounded-full py-2 px-6" href="">order now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative z-[-10] top-[-150px]">
+            <img class="absolute  right-0" src="./elips.svg" alt="">
+            <img class="absolute top-14 right-0" src="./5.svg" alt="">
+        </div>
+    </section>
+    <!-- Akhir Feature meal Section -->
+
+
+    <section class="mt-24 mx-6  md:mx-20">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="relative  mr-12">
+                <img src="./6.svg" alt="">
+                <img class="absolute z-[-10] top-[275px] left-[-100px]" src="./7.svg" alt="">
+            </div>
+            <div class="mt-12 md:mt-0 md:w-1/2">
+                <h1 class="text-3xl">Exploring the Flavors of Fresh Ingredients</h1>
+                <p class="mt-5">Using fresh ingredients can also have health benefits, as fresh produce is often packed with vitamins, minerals, and other nutrients that can help keep you healthy. Fresh ingredients can also be more sustainable and environmentally friendly, as they are typically grown and processed locally and have a smaller carbon footprint than imported or processed foods.</p>
+                <a class="text-white inline-block bg-[#11145B] py-2 px-6 mt-8" href="">Get It Now</a>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row justify-around gap-3 mt-40">
+            <div class="w-full md:w-1/4 py-4 flex justify-around items-center bg-white rounded-md">
+                    <img src="./8.svg" alt="">
+                    <h1>Fresh Ingredients</h1>
+            </div>
+            <div class="w-full md:w-1/4 py-4 flex justify-around items-center bg-white rounded-md">
+                <img src="./9.svg" alt="">
+                <h1>Hygienic Process</h1>
+            </div>
+            <div class="w-full md:w-1/4 py-4 flex justify-around items-center bg-white rounded-md">
+                <img src="./10.svg" alt="">
+                <h1>Fast Delivery</h1>
+            </div>
+            <div class="w-full md:w-1/4 py-4 flex justify-around items-center bg-white rounded-md">
+                <img src="./11.svg" alt="">
+                <h1>Professional chefs</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="mt-32 mx-6 md:mx-20">
+        <span class="text-3xl font-semibold">Category</span>
+        <div class="mt-32">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+
+                <!-- Menu 1 -->
+                <div class="mx-auto w-full  bg-white rounded-md">
+                    <div class="relative text-center w-full top-[-100px]">
+                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./1.svg" alt="">
+                    </div>
+                    <div class="relative px-6 top-[-55px]">
+                        <h1 class="text-center text-lg font-semibold">Fried Rice</h1>
+                        <div class="flex justify-center gap-2 ">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                        </div>
+                        <p class="mx-auto mt-4 text-center">Fried rice is a popular dish made from cooked rice that is stir-fried with various ingredients such as vegetables, proteins, and seasonings.</p>
+                        <div class="flex flex-col md:flex-row justify-between items-center mt-8">
+                            <span class="text-3xl font-bold">$29</span>
+                            <a class="bg-orange-400 inline-block rounded-full py-2 px-6" href="">order now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 2 -->
+                <div class="mx-auto w-full  bg-white rounded-md">
+                    <div class="relative text-center w-full top-[-100px]">
+                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./omelet.svg" alt="">
+                    </div>
+                    <div class="relative px-6 top-[-55px]">
+                        <h1 class="text-center text-lg font-semibold">Veggie Omelet</h1>
+                        <div class="flex justify-center gap-2 ">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                        </div>
+                        <p class="mx-auto mt-4 text-center">made by mixing eggs with various diced or chopped vegetables, such as bell peppers, onions, mushrooms, spinach, and cheese.</p>
+                        <div class="flex flex-col md:flex-row justify-between items-center mt-8">
+                            <span class="text-3xl font-bold">$29</span>
+                            <a class="bg-orange-400 inline-block rounded-full py-2 px-6" href="">order now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu 3 -->
+                <div class="mx-auto mt-24 md:mt-0 w-full  bg-white rounded-md">
+                    <div class="relative text-center w-full top-[-100px]">
+                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./smooti.svg" alt="">
+                    </div>
+                    <div class="relative px-6 top-[-55px]">
+                        <h1 class="text-center text-lg font-semibold">Smoothie Bowl</h1>
+                        <div class="flex justify-center gap-2 ">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                        </div>
+                        <p class="mx-auto mt-4 text-center">Topped with a variety of fresh fruit, granola, nuts, and other ingredients.</p>
+                        <div class="flex flex-col md:flex-row justify-between items-center mt-8">
+                            <span class="text-3xl font-bold">$29</span>
+                            <a class="bg-orange-400 inline-block rounded-full py-2 px-6" href="">order now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 4 -->
+                <div class="mx-auto mt-24 md:mt-0 w-full  bg-white rounded-md">
+                    <div class="relative text-center w-full top-[-100px]">
+                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./salmon.svg" alt="">
+                    </div>
+                    <div class="relative px-6 top-[-55px]">
+                        <h1 class="text-center text-lg font-semibold">Salmon Steak</h1>
+                        <div class="flex justify-center gap-2 ">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                        </div>
+                        <p class="mx-auto mt-4 text-center">A thick cut of salmon that is typically grilled, pan-fried, or baked and seasoning it with salt, pepper, and any other spices or herbs you prefer.</p>
+                        <div class="flex flex-col md:flex-row justify-between items-center mt-8">
+                            <span class="text-3xl font-bold">$29</span>
+                            <a class="bg-orange-400 inline-block rounded-full py-2 px-6" href="">order now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 5 -->
+                <div class="mx-auto mt-24 w-full  bg-white rounded-md">
+                    <div class="relative text-center w-full top-[-100px]">
+                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./waffle.svg" alt="">
+                    </div>
+                    <div class="relative px-6 top-[-55px]">
+                        <h1 class="text-center text-lg font-semibold">Belgian Waffle</h1>
+                        <div class="flex justify-center gap-2 ">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                        </div>
+                        <p class="mx-auto mt-4 text-center">Fluffy texture and deep, crisp squares. Made with a yeasted batter that includes ingredients such as flour, sugar, eggs, butter, and milk.</p>
+                        <div class="flex flex-col md:flex-row justify-between items-center mt-8">
+                            <span class="text-3xl font-bold">$29</span>
+                            <a class="bg-orange-400 inline-block rounded-full py-2 px-6" href="">order now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 6 -->
+                <div class="mx-auto mt-24 w-full  bg-white rounded-md">
+                    <div class="relative text-center w-full top-[-100px]">
+                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./huevos.svg" alt="">
+                    </div>
+                    <div class="relative px-6 top-[-55px]">
+                        <h1 class="text-center text-lg font-semibold">Huevos Rancheros</h1>
+                        <div class="flex justify-center gap-2 ">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                        </div>
+                        <p class="mx-auto mt-4 text-center">A traditional Mexican dish that consists of eggs served on top of a corn tortilla and covered with a spicy tomato sauce.</p>
+                        <div class="flex flex-col md:flex-row justify-between items-center mt-8">
+                            <span class="text-3xl font-bold">$29</span>
+                            <a class="bg-orange-400 inline-block rounded-full py-2 px-6" href="">order now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 7 -->
+                <div class="mx-auto mt-24 w-full  bg-white rounded-md">
+                    <div class="relative text-center w-full top-[-100px]">
+                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./toast.svg" alt="">
+                    </div>
+                    <div class="relative px-6 top-[-55px]">
+                        <h1 class="text-center text-lg font-semibold">French Toast</h1>
+                        <div class="flex justify-center gap-2 ">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                        </div>
+                        <p class="mx-auto mt-4 text-center">A popular breakfast dish made by soaking slices of bread in a mixture of eggs, milk, sugar, and vanilla extract, and then grilling or frying them until golden brown.</p>
+                        <div class="flex flex-col md:flex-row justify-between items-center mt-8">
+                            <span class="text-3xl font-bold">$29</span>
+                            <a class="bg-orange-400 inline-block rounded-full py-2 px-6" href="">order now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 8 -->
+                <div class="mx-auto mt-24 w-full  bg-white rounded-md">
+                    <div class="relative text-center w-full top-[-100px]">
+                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./2.svg" alt="">
+                    </div>
+                    <div class="relative px-6 top-[-55px]">
+                        <h1 class="text-center text-lg font-semibold">Strowberry Pancakes</h1>
+                        <div class="flex justify-center gap-2 ">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                            <img src="./bintang.svg" alt="">
+                        </div>
+                        <p class="mx-auto mt-4 text-center">A delicious and fruity breakfast dish made with fresh strawberries, flour, eggs, milk, sugar, and baking powder.</p>
+                        <div class="flex flex-col md:flex-row justify-between items-center mt-8">
+                            <span class="text-3xl font-bold">$29</span>
+                            <a class="bg-orange-400 inline-block rounded-full py-2 px-6" href="">order now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Akhir Category Section -->
+
+    <!-- Feedback Section -->
+    <section class="mt-12 mx-6 md:mx-20">
+        <div class="md:w-1/2 mx-auto">
+            <h1 class="text-center text-3xl">Customer Feedback</h1>
+            <p class="mt-6">“ I have been using the food delivery service for a few months now and I have to say, I am thoroughly impressed. The ordering process is seamless and hassle-free, and the food always arrives hot and fresh. The variety of cuisines and restaurants to choose from is extensive, making it easy for me to find something for everyone in my family. “</p>
+            <div class="flex mt-6">
+                <div class="flex items-center gap-5 mx-auto">
+                        <img src="./14.svg" alt="">
+                    <div>
+                        <h1>Jane Cooper</h1>
+                        <p>Mother</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Feedback Section -->
+
+    <!-- Footer Section -->
+    <footer class="mt-12">
+        <div class="mx-6 md:mx-20 p-5 md:p-10 flex md:items-center justify-around flex-col md:flex-row bg-[#11145B] text-white">
+            <div>
+                <div class="flex items-center gap-6">
+                    <img src="./logo brand.svg" alt="">
+                    <span class="text-2xl md:text-3xl">Meal Express</span>
+                </div>
+                <h1 class="mt-10">ADDRESS</h1>
+                <span>4517 Washington Ave. Manchester, Kentucky 39495</span>
+            </div>
+            <div class="mt-5 md:mt-0">
+                <h1 class="text-3xl">CONTACT</h1>
+                <div class="flex gap-3 mt-10">
+                    <img src="./contact.svg" alt="">
+                    <span>+62 123 4567 8910</span>
+                </div>
+                <div class="flex gap-3">
+                    <img src="./contact.svg" alt="">
+                    <span>+62 123 4567 8910</span>
+                </div>
+                <div class="flex gap-3">
+                    <img src="./contact.svg" alt="">
+                    <span>+62 123 4567 8910</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Akhir Footer Section -->
+
+
+    <script src="./js/script.js"></script>
+
+    
+</body>
+</html>
