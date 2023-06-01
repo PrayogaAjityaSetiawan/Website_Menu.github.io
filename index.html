@@ -7,13 +7,18 @@
     <link rel="stylesheet" href="./src/style.css">
     <link rel="icon" type="image/svg" href="./galery/logo brand.svg">
     <title>Menu Makanan</title>
+    <!-- <style>
+        *{
+            border: 1px solid red;
+        }
+    </style> -->
 </head>
 <body class="bg-[#edf2f4] overflow-x-hidden">
 
     <!-- Navbar Section -->
     <header>
         <nav class=" drop-shadow-sm fixed top-0 w-full z-10 md:flex md:justify-between md:items-center bg-[#11145B]">
-            <div class=" flex justify-between items-center py-6 mx-6 md:mx-20 text-white">
+            <div class=" flex justify-between items-center py-6 mx-6 lg:mx-20 text-white">
                 <div class="flex gap-3 items-center">
                     <img src="./galery/logo brand.svg" alt="">
                     <span class="text-2xl">Meal Express</span>
@@ -50,7 +55,7 @@
 
     <!-- Feature Meal Section -->
     <section class="mt-12">
-        <div class="mx-6 md:mx-20">
+        <div class="mx-6 lg:mx-20">
             <span class="text-3xl  font-semibold">Featured Meal</span>
             <div class="flex flex-col md:flex-row gap-3 mt-36">
                 <!-- Menu 1 -->
@@ -67,7 +72,7 @@
                             <img src="./bintang.svg" alt="">
                             <img src="./bintang.svg" alt="">
                         </div>
-                        <p class="mx-auto mt-4 text-center leading-relaxed">Fried rice is a popular dish made from cooked rice that is stir-fried with various ingredients such as vegetables, proteins, and seasonings.</p>
+                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">Fried rice is a popular dish made from cooked rice that is stir-fried with various ingredients such as vegetables, proteins, and seasonings.</p>
                         <div class="flex justify-between items-center mt-8">
                             <span class="text-3xl font-bold">$29</span>
                             <a class="bg-[#11145B] text-white capitalize inline-block rounded-full py-2 px-6" href="">order now</a>
@@ -88,7 +93,7 @@
                             <img src="./bintang.svg" alt="">
                             <img src="./bintang.svg" alt="">
                         </div>
-                        <p class="mx-auto mt-4 text-center leading-relaxed">A delicious and fruity breakfast dish made with fresh strawberries, flour, eggs, milk, sugar, and baking powder.</p>
+                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">A delicious and fruity breakfast dish made with fresh strawberries, flour, eggs, milk, sugar, and baking powder.</p>
                         <div class="flex justify-between items-center mt-8">
                             <span class="text-3xl font-bold">$59</span>
                             <a class="bg-[#11145B] text-white capitalize inline-block rounded-full py-2 px-6" href="">order now</a>
@@ -109,7 +114,7 @@
                             <img src="./bintang.svg" alt="">
                             <img src="./bintang.svg" alt="">
                         </div>
-                        <p class="mx-auto mt-4 text-center leading-relaxed">Made with scoops of ice cream, topped with sweet toppings such as whipped cream, chopped nuts, sprinkles, and a cherry on top.</p>
+                        <p class="mx-auto line-clamp-3 md:line-clamp-3 mt-4 text-center leading-relaxed">Made with scoops of ice cream, topped with sweet toppings such as whipped cream, chopped nuts, sprinkles, and a cherry on top.</p>
                         <div class="flex justify-between items-center mt-8">
                             <span class="text-3xl font-bold">$39</span>
                             <a class="bg-[#11145B] text-white capitalize inline-block rounded-full py-2 px-6" href="">order now</a>
@@ -130,7 +135,7 @@
                             <img src="./bintang.svg" alt="">
                             <img src="./bintang.svg" alt="">
                         </div>
-                        <p class="mx-auto mt-4 text-center leading-relaxed">Made with a soft and fluffy dough, rolled out and spread with a mixture of sugar, cinnamon, and butter, and then baked to perfection.</p>
+                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">Made with a soft and fluffy dough, rolled out and spread with a mixture of sugar, cinnamon, and butter, and then baked to perfection.</p>
                         <div class="flex justify-between items-center mt-8">
                             <span class="text-3xl font-bold">$69</span>
                             <a class="bg-[#11145B] text-white capitalize inline-block rounded-full py-2 px-6" href="">order now</a>
@@ -180,13 +185,13 @@
     </section>
 
     <!-- Category Section -->
-    <section class="mt-32 mx-6 md:mx-20">
+    <section class="mt-32 mx-6 lg:mx-20">
         <span class="text-3xl capitalize font-semibold">category menu</span>
         <div class="mt-32">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
 
                 <!-- Menu 1 -->
-                <div class="mx-auto w-full  bg-white rounded-md">
+                <div class="mx-auto w-full bg-white rounded-md">
                     <div class="relative text-center w-full top-[-100px]">
                         <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./galery/1.svg" alt="">
                     </div>
@@ -199,10 +204,10 @@
                             <img src="./bintang.svg" alt="">
                             <img src="./bintang.svg" alt="">
                         </div>
-                        <p class="mx-auto mt-4 text-center leading-relaxed">Fried rice is a popular dish made from cooked rice that is stir-fried with various ingredients such as vegetables, proteins, and seasonings.</p>
+                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">Fried rice is a popular dish made from cooked rice that is stir-fried with various ingredients such as vegetables, proteins, and seasonings.</p>
                         <div class="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-8">
                             <span class="text-3xl font-bold">$29</span>
-                            <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-6" href="">order now</a>
+                            <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-4 md:px-6" href="">order now</a>
                         </div>
                     </div>
                 </div>
@@ -221,10 +226,10 @@
                             <img src="./bintang.svg" alt="">
                             <img src="./bintang.svg" alt="">
                         </div>
-                        <p class="mx-auto mt-4 text-center leading-relaxed">made by mixing eggs with various diced or chopped vegetables, such as bell peppers, onions, mushrooms, spinach, and cheese.</p>
+                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">made by mixing eggs with various diced or chopped vegetables, such as bell peppers, onions, mushrooms, spinach, and cheese.</p>
                         <div class="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-8">
                             <span class="text-3xl font-bold">$19</span>
-                            <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-6" href="">order now</a>
+                            <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-4 md:px-6" href="">order now</a>
                         </div>
                     </div>
                 </div>
@@ -243,10 +248,10 @@
                             <img src="./bintang.svg" alt="">
                             <img src="./bintang.svg" alt="">
                         </div>
-                        <p class="mx-auto mt-4 text-center leading-relaxed">Topped with a variety of fresh fruit, granola, nuts, and other ingredients.</p>
+                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">Topped with a variety of fresh fruit, granola, nuts, and other ingredients.</p>
                         <div class="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-8">
                             <span class="text-3xl font-bold">$49</span>
-                            <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-6" href="">order now</a>
+                            <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-4 md:px-6" href="">order now</a>
                         </div>
                     </div>
                 </div>
@@ -265,10 +270,10 @@
                             <img src="./bintang.svg" alt="">
                             <img src="./bintang.svg" alt="">
                         </div>
-                        <p class="mx-auto mt-4 text-center leading-relaxed">A thick cut of salmon that is typically grilled, pan-fried, or baked and seasoning it with salt, pepper, and any other spices or herbs you prefer.</p>
+                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">A thick cut of salmon that is typically grilled, pan-fried, or baked and seasoning it with salt, pepper, and any other spices or herbs you prefer.</p>
                         <div class="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-8">
                             <span class="text-3xl font-bold">$79</span>
-                            <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-6" href="">order now</a>
+                            <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-4 md:px-6" href="">order now</a>
                         </div>
                     </div>
                 </div>
@@ -287,10 +292,10 @@
                             <img src="./bintang.svg" alt="">
                             <img src="./bintang.svg" alt="">
                         </div>
-                        <p class="mx-auto mt-4 text-center leading-relaxed">Fluffy texture and deep, crisp squares. Made with a yeasted batter that includes ingredients such as flour, sugar, eggs, butter, and milk.</p>
+                        <p class="mx-auto line-clamp-3 md:line-clamp-3 mt-4 text-center leading-relaxed">Fluffy texture and deep, crisp squares. Made with a yeasted batter that includes ingredients such as flour, sugar, eggs, butter, and milk.</p>
                         <div class="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-8">
                             <span class="text-3xl font-bold">$69</span>
-                            <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-6" href="">order now</a>
+                            <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-4 md:px-6" href="">order now</a>
                         </div>
                     </div>
                 </div>
@@ -309,10 +314,10 @@
                             <img src="./bintang.svg" alt="">
                             <img src="./bintang.svg" alt="">
                         </div>
-                        <p class="mx-auto mt-4 text-center leading-relaxed">A traditional Mexican dish that consists of eggs served on top of a corn tortilla and covered with a spicy tomato sauce.</p>
+                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">A traditional Mexican dish that consists of eggs served on top of a corn tortilla and covered with a spicy tomato sauce.</p>
                         <div class="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-8">
                             <span class="text-3xl font-bold">$45</span>
-                            <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-6" href="">order now</a>
+                            <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-4 md:px-6" href="">order now</a>
                         </div>
                     </div>
                 </div>
@@ -331,10 +336,10 @@
                             <img src="./bintang.svg" alt="">
                             <img src="./bintang.svg" alt="">
                         </div>
-                        <p class="mx-auto mt-4 text-center leading-relaxed">A popular breakfast dish made by soaking slices of bread in a mixture of eggs, milk, sugar, and vanilla extract, and then grilling or frying them until golden brown.</p>
+                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">A popular breakfast dish made by soaking slices of bread in a mixture of eggs, milk, sugar, and vanilla extract, and then grilling or frying them until golden brown.</p>
                         <div class="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-8">
                             <span class="text-3xl font-bold">$24</span>
-                            <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-6" href="">order now</a>
+                            <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-4 md:px-6" href="">order now</a>
                         </div>
                     </div>
                 </div>
@@ -353,10 +358,10 @@
                             <img src="./bintang.svg" alt="">
                             <img src="./bintang.svg" alt="">
                         </div>
-                        <p class="mx-auto mt-4 text-center leading-relaxed">A delicious and fruity breakfast dish made with fresh strawberries, flour, eggs, milk, sugar, and baking powder.</p>
+                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">A delicious and fruity breakfast dish made with fresh strawberries, flour, eggs, milk, sugar, and baking powder.</p>
                         <div class="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-8">
                             <span class="text-3xl font-bold">$59</span>
-                            <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-6" href="">order now</a>
+                            <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-4 md:px-6" href="">order now</a>
                         </div>
                     </div>
                 </div>
