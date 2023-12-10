@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style.css">
     <link rel="icon" type="image/svg" href="./galery/logo brand.svg">
-    <title>Menu Makanan</title>
-    <!-- <style>
-        *{
-            border: 1px solid red;
-        }
-    </style> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Meal Express</title>
 </head>
-<body class="bg-[#edf2f4] overflow-x-hidden">
+<body class="bg-[#edf2f4] overflow-x-hidden box-border">
 
     <!-- Navbar Section -->
     <header>
@@ -23,7 +20,7 @@
                     <img src="./galery/logo brand.svg" alt="">
                     <span class="text-2xl">Meal Express</span>
                 </div>
-                <button class="mobile-button md:hidden">
+                <button aria-label="button" class="mobile-button md:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
@@ -43,11 +40,11 @@
     <!-- Akhir Navbar Section -->
 
     <!-- Hero Section -->
-    <section style="background-image: url(./galery/hero.jpg);" class="h-[100vh] bg-center md:bg-cover">
-        <div class="pt-[50vh]">
-            <h1 class="text-3xl text-center text-white">Get Delicious Food Delivered, Straight to Your Door</h1>
+    <section style="background-image: url(./galery/hero.webp);" class="h-[100vh] bg-center md:bg-cover">
+        <div class="pt-[50vh] mx-6">
+            <h1 data-aos="fade-down" data-aos-duration="1000"  class="text-3xl text-center text-white">Get Delicious Food Delivered, Straight to Your Door</h1>
             <div class="flex mt-6 mx-auto">
-                <a class="inline-block mx-auto py-3 px-8 text-white bg-[#11145B] rounded-full" href="">Order Now</a>
+                <a data-aos="fade-down" data-aos-duration="1000" class="inline-block mx-auto py-3 px-8 text-white bg-[#11145B]" href="">Order Now</a>
             </div>
         </div>
     </section>
@@ -58,84 +55,80 @@
         <div class="mx-6 lg:mx-20">
             <span class="text-3xl  font-semibold">Featured Meal</span>
             <div class="flex flex-col md:flex-row gap-3 mt-36">
-                <!-- Menu 1 -->
-                <div class="mx-auto w-[300px] bg-white rounded-lg">
-                    <div class="relative text-center w-full top-[-100px]">
+                <div data-aos="fade-up" data-aos-duration="350" class="mx-auto w-[300px] h-[400px] bg-white rounded-lg flex flex-col justify-between">
+                    <div class="relative text-center w-full top-[-100px] hover:">
                         <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./galery/1.png" alt="">
                     </div>
                     <div class="relative px-6 top-[-55px]">
                         <h1 class="text-center text-lg font-semibold">Fried Rice</h1>
-                        <div class="flex justify-center gap-2">
-                            <img src="/galery/bintang.svg" alt="">
-                            <img src="/galery/bintang.svg" alt="">
-                            <img src="/galery/bintang.svg" alt="">
-                            <img src="/galery/bintang.svg" alt="">
-                            <img src="/galery/bintang.svg" alt="">
-                        </div>
-                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">Fried rice is a popular dish made from cooked rice that is stir-fried with various ingredients such as vegetables, proteins, and seasonings.</p>
+                        <picture class="flex justify-center gap-2">
+                            <img src="./galery/bintang.svg" alt="">
+                            <img src="./galery/bintang.svg" alt="">
+                            <img src="./galery/bintang.svg" alt="">
+                            <img src="./galery/bintang.svg" alt="">
+                            <img src="./galery/bintang.svg" alt="">
+                        </picture>
+                        <p class="mx-auto line-clamp-3  mt-4 text-center leading-relaxed">Fried rice is a popular dish made from cooked rice that is stir-fried with various ingredients such as vegetables, proteins, and seasonings.</p>
                         <div class="flex justify-between items-center mt-8">
-                            <span class="text-3xl font-bold">$29</span>
+                            <span class="text-xl md:text-3xl font-bold">$29</span>
                             <a class="bg-[#11145B] text-white capitalize inline-block rounded-full py-2 px-6" href="">order now</a>
                         </div>
                     </div>
                 </div>
-                <!-- Menu 2 -->
-                <div class="mt-24 md:mt-0 mx-auto w-[300px] bg-white rounded-lg">
+                <div data-aos="fade-up" data-aos-duration="500"  class="mt-24 md:mt-0 mx-auto w-[300px] h-[400px] bg-white rounded-lg flex flex-col justify-between">
                     <div class="relative text-center w-full top-[-100px]">
                         <img class="rounded-full  shadow-2xl shadow-black mx-auto" src="./galery/2.png" alt="">
                     </div>
                     <div class="relative px-6 top-[-55px]">
                         <h1 class="text-center text-lg font-semibold">Strowberry Pancakes</h1>
-                        <div class="flex justify-center gap-2 ">
+                        <picture class="flex justify-center gap-2 ">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
-                        </div>
-                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">A delicious and fruity breakfast dish made with fresh strawberries, flour, eggs, milk, sugar, and baking powder.</p>
+                        </picture>
+                        <p class="mx-auto line-clamp-3 mt-4 text-center leading-relaxed">A delicious and fruity breakfast dish made with fresh strawberries, flour, eggs, milk, sugar, and baking powder.</p>
                         <div class="flex justify-between items-center mt-8">
                             <span class="text-3xl font-bold">$59</span>
                             <a class="bg-[#11145B] text-white capitalize inline-block rounded-full py-2 px-6" href="">order now</a>
                         </div>
                     </div>
-                    <!-- Menu 3 -->
                 </div>
-                <div class="mt-24 md:mt-0 mx-auto w-[300px] bg-white rounded-lg">
+                <div data-aos="fade-up" data-aos-duration="700"  class="mt-24 md:mt-0 mx-auto w-[300px] h-[400px] bg-white rounded-lg flex flex-col justify-between">
                     <div class="relative text-center w-full top-[-100px]">
                         <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./galery/3.png" alt="">
                     </div>
                     <div class="relative px-6 top-[-55px]">
                         <h1 class="text-center text-lg font-semibold">Ice Cream Sundae</h1>
-                        <div class="flex justify-center gap-2 ">
+                        <picture class="flex justify-center gap-2 ">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
-                        </div>
-                        <p class="mx-auto line-clamp-3 md:line-clamp-3 mt-4 text-center leading-relaxed">Made with scoops of ice cream, topped with sweet toppings such as whipped cream, chopped nuts, sprinkles, and a cherry on top.</p>
+                        </picture>
+                        <p class="mx-auto line-clamp-3 mt-4 text-center leading-relaxed">Made with scoops of ice cream, topped with sweet toppings such as whipped cream, chopped nuts, sprinkles, and a cherry on top.</p>
                         <div class="flex justify-between items-center mt-8">
                             <span class="text-3xl font-bold">$39</span>
                             <a class="bg-[#11145B] text-white capitalize inline-block rounded-full py-2 px-6" href="">order now</a>
                         </div>
                     </div>
-                    <!-- Menu 4 -->
                 </div>
-                <div class="mt-24 md:mt-0 mx-auto w-[300px] bg-white rounded-lg">
+                <div data-aos="fade-up" data-aos-duration="1000"  class="mt-24 md:mt-0 mx-auto w-[300px] h-[400px] bg-white rounded-lg flex flex-col justify-between">
                     <div class="relative text-center w-full top-[-100px]">
                         <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./galery/4.png" alt="">
                     </div>
                     <div class="relative px-6 top-[-55px]">
                         <h1 class="text-center text-lg font-semibold">Cinnamon Rolls</h1>
-                        <div class="flex justify-center gap-2 ">
+                        <picture class="flex justify-center gap-2 ">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
-                        </div>
-                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">Made with a soft and fluffy dough, rolled out and spread with a mixture of sugar, cinnamon, and butter, and then baked to perfection.</p>
+                        </picture>
+                        <p class="mx-auto line-clamp-3 mt-4 text-center leading-relaxed">Made with a soft and fluffy dough, rolled out and spread with a mixture of sugar, cinnamon, and butter, and then baked to perfection.</p>
                         <div class="flex justify-between items-center mt-8">
                             <span class="text-3xl font-bold">$69</span>
                             <a class="bg-[#11145B] text-white capitalize inline-block rounded-full py-2 px-6" href="">order now</a>
@@ -144,7 +137,7 @@
                 </div>
             </div>
         </div>
-        <div class="relative z-[-10] top-[-150px]">
+        <div data-aos="fade-left" data-aos-duration="1000" class="relative z-[-10] top-[-150px]">
             <img class="absolute  right-0" src="./galery/elips.svg" alt="">
             <img class="absolute top-14 right-0" src="./galery/5.svg" alt="">
         </div>
@@ -154,31 +147,39 @@
 
     <section class="mt-24 mx-6  md:mx-20">
         <div class="flex flex-col md:flex-row items-center">
-            <div class="relative  mr-12">
-                <img src="./galery/6.svg" alt="">
-                <img class="absolute z-[-10] top-[275px] left-[-100px]" src="./galery/7.svg" alt="">
-            </div>
-            <div class="mt-12 md:mt-0 md:w-1/2">
+            <picture  class="relative  mr-12">
+                <img data-aos="fade-down" data-aos-duration="1000" src="./galery/6.svg" alt="">
+                <img data-aos="fade-right" data-aos-duration="1000" class="absolute z-[-10] top-[275px] left-[-100px]" src="./galery/7.svg" alt="">
+            </picture>
+            <div data-aos="fade-up" data-aos-duration="1000" class="mt-12 md:mt-0 md:w-1/2">
                 <h1 class="text-3xl font-semibold">Exploring the Flavors of Fresh Ingredients</h1>
                 <p class="mt-5 leading-relaxed">Using fresh ingredients can also have health benefits, as fresh produce is often packed with vitamins, minerals, and other nutrients that can help keep you healthy. Fresh ingredients can also be more sustainable and environmentally friendly, as they are typically grown and processed locally and have a smaller carbon footprint than imported or processed foods.</p>
-                <a class="text-white inline-block bg-[#11145B] rounded-full py-2 px-6 mt-8" href="">Get It Now</a>
+                <a class="text-white inline-block bg-[#11145B] py-2 px-6 mt-8" href="">Get It Now</a>
             </div>
         </div>
         <div class="flex flex-col md:flex-row justify-around gap-3 mt-40">
-            <div class="w-full md:w-1/4 py-4 flex justify-around items-center bg-white rounded-md">
-                    <img src="./galery/8.svg" alt="">
+            <div data-aos="fade-right" data-aos-duration="400"  class="w-full md:w-1/4 py-4 flex justify-around items-center bg-white rounded-md">
+                    <picture>
+                        <img src="./galery/8.svg" alt="">
+                    </picture>
                     <h1>Fresh Ingredients</h1>
             </div>
-            <div class="w-full md:w-1/4 py-4 flex justify-around items-center bg-white rounded-md">
-                <img src="./galery/9.svg" alt="">
+            <div data-aos="fade-right" data-aos-duration="600"  class="w-full md:w-1/4 py-4 flex justify-around items-center bg-white rounded-md">
+                <picture>
+                    <img src="./galery/9.svg" alt="">
+                </picture>
                 <h1>Hygienic Process</h1>
             </div>
-            <div class="w-full md:w-1/4 py-4 flex justify-around items-center bg-white rounded-md">
-                <img src="./galery/10.svg" alt="">
+            <div data-aos="fade-right" data-aos-duration="800"  class="w-full md:w-1/4 py-4 flex justify-around items-center bg-white rounded-md">
+                <picture>
+                    <img src="./galery/10.svg" alt="">
+                </picture>
                 <h1>Fast Delivery</h1>
             </div>
-            <div class="w-full md:w-1/4 py-4 flex justify-around items-center bg-white rounded-md">
-                <img src="./galery/11.svg" alt="">
+            <div data-aos="fade-right" data-aos-duration="1000"  class="w-full md:w-1/4 py-4 flex justify-around items-center bg-white rounded-md">
+                <picture>
+                    <img src="./galery/11.svg" alt="">
+                </picture>
                 <h1>Professional chefs</h1>
             </div>
         </div>
@@ -188,24 +189,25 @@
     <section class="mt-32 mx-6 lg:mx-20">
         <span class="text-3xl capitalize font-semibold">category menu</span>
         <div class="mt-32">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
-
+            <div class="flex flex-col items-center gap-10 md:grid grid-cols-2 md:grid-cols-4 md:gap-2">
                 <!-- Menu 1 -->
-                <div class="mx-auto w-full bg-white rounded-md">
-                    <div class="relative text-center w-full top-[-100px]">
-                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./galery/1.png" alt="">
+                <div data-aos="fade-right" data-aos-duration="400"  class="mx-auto w-full h-[400px] bg-white hover:bg-slate-400 rounded-md flex flex-col justify-between">
+                    <div class="relative text-center hover:rotate-[360deg] transition-all duration-500 delay-100 w-full top-[-100px]">
+                        <picture>
+                            <img class="rounded-full  mx-auto" src="./galery/1.png" alt="">
+                        </picture>
                     </div>
                     <div class="relative px-6 top-[-55px]">
                         <h1 class="text-center text-lg font-semibold">Fried Rice</h1>
-                        <div class="flex justify-center gap-2 ">
+                        <picture class="flex justify-center gap-2 ">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
-                        </div>
-                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">Fried rice is a popular dish made from cooked rice that is stir-fried with various ingredients such as vegetables, proteins, and seasonings.</p>
-                        <div class="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-8">
+                        </picture>
+                        <p class="mx-auto line-clamp-3 mt-4 text-center leading-relaxed">Fried rice is a popular dish made from cooked rice that is stir-fried with various ingredients such as vegetables, proteins, and seasonings.</p>
+                        <div class="flex justify-between items-center mt-5 md:mt-8">
                             <span class="text-3xl font-bold">$29</span>
                             <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-4 md:px-6" href="">order now</a>
                         </div>
@@ -213,43 +215,46 @@
                 </div>
 
                 <!-- Menu 2 -->
-                <div class="mx-auto w-full  bg-white rounded-md">
-                    <div class="relative text-center w-full top-[-100px]">
-                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./galery/omelet.png" alt="">
+                <div data-aos="fade-right" data-aos-duration="600"  class="mx-auto mt-24 md:mt-0 w-full h-[400px] bg-white hover:bg-slate-400 rounded-md flex flex-col justify-between">
+                    <div class="relative text-center hover:rotate-[360deg] transition-all duration-500 delay-100 w-full top-[-100px]">
+                        <picture>
+                            <img class="rounded-full  mx-auto" src="./galery/omelet.png" alt="">
+                        </picture>
                     </div>
                     <div class="relative px-6 top-[-55px]">
                         <h1 class="text-center text-lg font-semibold">Veggie Omelet</h1>
-                        <div class="flex justify-center gap-2 ">
+                        <picture class="flex justify-center gap-2 ">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
-                        </div>
-                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">made by mixing eggs with various diced or chopped vegetables, such as bell peppers, onions, mushrooms, spinach, and cheese.</p>
-                        <div class="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-8">
+                        </picture>
+                        <p class="mx-auto line-clamp-3 mt-4 text-center leading-relaxed">made by mixing eggs with various diced or chopped vegetables, such as bell peppers, onions, mushrooms, spinach, and cheese.</p>
+                        <div class="flex justify-between items-center mt-5 md:mt-8">
                             <span class="text-3xl font-bold">$19</span>
                             <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-4 md:px-6" href="">order now</a>
                         </div>
                     </div>
                 </div>
-
                 <!-- Menu 3 -->
-                <div class="mx-auto mt-24 md:mt-0 w-full  bg-white rounded-md">
-                    <div class="relative text-center w-full top-[-100px]">
-                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./galery/smooti.png" alt="">
+                <div data-aos="fade-right" data-aos-duration="800"  class="mx-auto mt-24 md:mt-0 w-full h-[400px]  bg-white hover:bg-slate-400 rounded-md flex flex-col justify-between">
+                    <div class="relative text-center w-full top-[-100px] hover:rotate-[360deg] transition-all duration-500 delay-100">
+                        <picture>
+                            <img class="rounded-full mx-auto" src="./galery/smooti.png" alt="">
+                        </picture>
                     </div>
                     <div class="relative px-6 top-[-55px]">
                         <h1 class="text-center text-lg font-semibold">Smoothie Bowl</h1>
-                        <div class="flex justify-center gap-2 ">
+                        <picture class="flex justify-center gap-2 ">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
-                        </div>
-                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">Topped with a variety of fresh fruit, granola, nuts, and other ingredients.</p>
-                        <div class="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-8">
+                        </picture>
+                        <p class="mx-auto line-clamp-3  mt-4 text-center leading-relaxed">Topped with a variety of fresh fruit, granola, nuts, and other ingredients.</p>
+                        <div class="flex justify-between items-center mt-5 md:mt-8">
                             <span class="text-3xl font-bold">$49</span>
                             <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-4 md:px-6" href="">order now</a>
                         </div>
@@ -257,21 +262,23 @@
                 </div>
 
                 <!-- Menu 4 -->
-                <div class="mx-auto mt-24 md:mt-0 w-full  bg-white rounded-md">
-                    <div class="relative text-center w-full top-[-100px]">
-                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./galery/salmon.png" alt="">
+                <div data-aos="fade-right" data-aos-duration="1000"  class="mx-auto mt-24 md:mt-0 w-full h-[400px]  bg-white hover:bg-slate-400 rounded-md flex flex-col justify-between">
+                    <div class="relative text-center w-full top-[-100px] hover:rotate-[360deg] transition-all duration-500 delay-100">
+                        <picture>
+                            <img class="rounded-full mx-auto w-56" src="./galery/salmon.png" alt="">
+                        </picture>
                     </div>
                     <div class="relative px-6 top-[-55px]">
                         <h1 class="text-center text-lg font-semibold">Salmon Steak</h1>
-                        <div class="flex justify-center gap-2 ">
+                        <picture class="flex justify-center gap-2 ">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
-                        </div>
-                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">A thick cut of salmon that is typically grilled, pan-fried, or baked and seasoning it with salt, pepper, and any other spices or herbs you prefer.</p>
-                        <div class="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-8">
+                        </picture>
+                        <p class="mx-auto line-clamp-3 mt-4 text-center leading-relaxed">A thick cut of salmon that is typically grilled, pan-fried, or baked and seasoning it with salt, pepper, and any other spices or herbs you prefer.</p>
+                        <div class="flex justify-between items-center mt-5 md:mt-8">
                             <span class="text-3xl font-bold">$79</span>
                             <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-4 md:px-6" href="">order now</a>
                         </div>
@@ -279,21 +286,23 @@
                 </div>
 
                 <!-- Menu 5 -->
-                <div class="mx-auto mt-24 w-full  bg-white rounded-md">
-                    <div class="relative text-center w-full top-[-100px]">
-                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./galery/waffle.png" alt="">
+                <div data-aos="fade-left" data-aos-duration="400"  class="mx-auto mt-24 w-full h-[400px]  bg-white hover:bg-slate-400 rounded-md flex flex-col justify-between">
+                    <div class="relative text-center w-full top-[-100px] hover:rotate-[360deg] transition-all duration-500 delay-100">
+                        <picture>
+                            <img class="rounded-full  mx-auto" src="./galery/waffle.png" alt="">
+                        </picture>
                     </div>
                     <div class="relative px-6 top-[-55px]">
                         <h1 class="text-center text-lg font-semibold">Belgian Waffle</h1>
-                        <div class="flex justify-center gap-2 ">
+                        <picture class="flex justify-center gap-2 ">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
-                        </div>
-                        <p class="mx-auto line-clamp-3 md:line-clamp-3 mt-4 text-center leading-relaxed">Fluffy texture and deep, crisp squares. Made with a yeasted batter that includes ingredients such as flour, sugar, eggs, butter, and milk.</p>
-                        <div class="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-8">
+                        </picture>
+                        <p class="mx-auto line-clamp-3 mt-4 text-center leading-relaxed">Fluffy texture and deep, crisp squares. Made with a yeasted batter that includes ingredients such as flour, sugar, eggs, butter, and milk.</p>
+                        <div class="flex justify-between items-center mt-5 md:mt-8">
                             <span class="text-3xl font-bold">$69</span>
                             <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-4 md:px-6" href="">order now</a>
                         </div>
@@ -301,21 +310,23 @@
                 </div>
 
                 <!-- Menu 6 -->
-                <div class="mx-auto mt-24 w-full  bg-white rounded-md">
-                    <div class="relative text-center w-full top-[-100px]">
-                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./galery/huevos.png" alt="">
+                <div data-aos="fade-left" data-aos-duration="600" class="mx-auto mt-24 w-full h-[400px]  bg-white hover:bg-slate-400 rounded-md flex flex-col justify-between">
+                    <div class="relative text-center w-full top-[-100px] hover:rotate-[360deg] transition-all duration-500 delay-100">
+                        <picture>
+                            <img class="rounded-full mx-auto" src="./galery/huevos.png" alt="">
+                        </picture>
                     </div>
                     <div class="relative px-6 top-[-55px]">
                         <h1 class="text-center text-lg font-semibold">Huevos Rancheros</h1>
-                        <div class="flex justify-center gap-2 ">
+                        <picture class="flex justify-center gap-2 ">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
-                        </div>
-                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">A traditional Mexican dish that consists of eggs served on top of a corn tortilla and covered with a spicy tomato sauce.</p>
-                        <div class="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-8">
+                        </picture>
+                        <p class="mx-auto line-clamp-3 mt-4 text-center leading-relaxed">A traditional Mexican dish that consists of eggs served on top of a corn tortilla and covered with a spicy tomato sauce.</p>
+                        <div class="flex justify-between items-center mt-5 md:mt-8">
                             <span class="text-3xl font-bold">$45</span>
                             <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-4 md:px-6" href="">order now</a>
                         </div>
@@ -323,21 +334,23 @@
                 </div>
 
                 <!-- Menu 7 -->
-                <div class="mx-auto mt-24 w-full  bg-white rounded-md">
-                    <div class="relative text-center w-full top-[-100px]">
-                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./galery/toast.png" alt="">
+                <div data-aos="fade-left" data-aos-duration="800" class="mx-auto mt-24 w-full h-[400px]  bg-white hover:bg-slate-400 rounded-md flex flex-col justify-between">
+                    <div class="relative text-center w-full top-[-100px] hover:rotate-[360deg] transition-all duration-500 delay-100">
+                        <picture>
+                            <img class="rounded-full mx-auto" src="./galery/toast.png" alt="">
+                        </picture>
                     </div>
                     <div class="relative px-6 top-[-55px]">
                         <h1 class="text-center text-lg font-semibold">French Toast</h1>
-                        <div class="flex justify-center gap-2 ">
+                        <picture class="flex justify-center gap-2 ">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
-                        </div>
-                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">A popular breakfast dish made by soaking slices of bread in a mixture of eggs, milk, sugar, and vanilla extract, and then grilling or frying them until golden brown.</p>
-                        <div class="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-8">
+                        </picture>
+                        <p class="mx-auto line-clamp-3  mt-4 text-center leading-relaxed">A popular breakfast dish made by soaking slices of bread in a mixture of eggs, milk, sugar, and vanilla extract, and then grilling or frying them until golden brown.</p>
+                        <div class="flex justify-between items-center mt-5 md:mt-8">
                             <span class="text-3xl font-bold">$24</span>
                             <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-4 md:px-6" href="">order now</a>
                         </div>
@@ -345,21 +358,23 @@
                 </div>
 
                 <!-- Menu 8 -->
-                <div class="mx-auto mt-24 w-full  bg-white rounded-md">
-                    <div class="relative text-center w-full top-[-100px]">
-                        <img class="rounded-full shadow-2xl shadow-black mx-auto" src="./galery/2.png" alt="">
+                <div data-aos="fade-left" data-aos-duration="1000" class="mx-auto mt-24 w-full h-[400px]  bg-white hover:bg-slate-400 rounded-md flex flex-col justify-between">
+                    <div class="relative text-center w-full top-[-100px] hover:rotate-[360deg] transition-all duration-500 delay-100">
+                        <picture>
+                            <img class="rounded-full mx-auto" src="./galery/2.png" alt="">
+                        </picture>
                     </div>
                     <div class="relative px-6 top-[-55px]">
                         <h1 class="text-center text-lg font-semibold">Strowberry Pancakes</h1>
-                        <div class="flex justify-center gap-2 ">
+                        <picture class="flex justify-center gap-2 ">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
                             <img src="./galery/bintang.svg" alt="">
-                        </div>
-                        <p class="mx-auto line-clamp-3 md:line-clamp-none mt-4 text-center leading-relaxed">A delicious and fruity breakfast dish made with fresh strawberries, flour, eggs, milk, sugar, and baking powder.</p>
-                        <div class="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-8">
+                        </picture>
+                        <p class="mx-auto line-clamp-3 mt-4 text-center leading-relaxed">A delicious and fruity breakfast dish made with fresh strawberries, flour, eggs, milk, sugar, and baking powder.</p>
+                        <div class="flex justify-between items-center mt-5 md:mt-8">
                             <span class="text-3xl font-bold">$59</span>
                             <a class="bg-[#11145B] text-white capitalize inline-block rounded-full mt-2 md:mt-0 py-2 px-4 md:px-6" href="">order now</a>
                         </div>
@@ -370,10 +385,17 @@
     <!-- Akhir Category Section -->
 
     <!-- Feedback Section -->
-    <section class="mt-12 mx-6 md:mx-20">
+    <section data-aos="fade-up" data-aos-duration="1000" class="mt-12 mx-6 md:mx-20">
+        <h1 class="text-center text-3xl font-semibold">Customer Feedback</h1>
+        <div class="cursor-grabbing">
+            <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
         <div class="md:w-1/2 mx-auto">
-            <h1 class="text-center text-3xl font-semibold">Customer Feedback</h1>
-            <p class="mt-6">“ I have been using the food delivery service for a few months now and I have to say, I am thoroughly impressed. The ordering process is seamless and hassle-free, and the food always arrives hot and fresh. The variety of cuisines and restaurants to choose from is extensive, making it easy for me to find something for everyone in my family. “</p>
+            <p class="mt-6 italic">“ I have been using the food delivery service for a few months now and I have to say, I am thoroughly impressed. The ordering process is seamless and hassle-free, and the food always arrives hot and fresh. The variety of cuisines and restaurants to choose from is extensive, making it easy for me to find something for everyone in my family. “</p>
             <div class="flex mt-6">
                 <div class="flex items-center gap-5 mx-auto">
                         <img src="./galery/14.svg" alt="">
@@ -384,33 +406,70 @@
                 </div>
             </div>
         </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="md:w-1/2 mx-auto">
+            <p class="mt-6 italic">“ I have been using the food delivery service for a few months now and I have to say, I am thoroughly impressed. The ordering process is seamless and hassle-free, and the food always arrives hot and fresh. The variety of cuisines and restaurants to choose from is extensive, making it easy for me to find something for everyone in my family. “</p>
+            <div class="flex mt-6">
+                <div class="flex items-center gap-5 mx-auto">
+                        <img src="./galery/14.svg" alt="">
+                    <div>
+                        <h1 class="text-lg font-semibold">Jane Cooper</h1>
+                        <p>Mother</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="md:w-1/2 mx-auto mb-10">
+            <p class="mt-6 italic">“ I have been using the food delivery service for a few months now and I have to say, I am thoroughly impressed. The ordering process is seamless and hassle-free, and the food always arrives hot and fresh. The variety of cuisines and restaurants to choose from is extensive, making it easy for me to find something for everyone in my family. “</p>
+            <div class="flex mt-6">
+                <div class="flex items-center gap-5 mx-auto">
+                        <img src="./galery/14.svg" alt="">
+                    <div>
+                        <h1 class="text-lg font-semibold">Jane Cooper</h1>
+                        <p>Mother</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+  </div>
+        </div>
     </section>
     <!-- Akhir Feedback Section -->
 
     <!-- Footer Section -->
     <footer class="mt-12">
-        <div class="mx-6 md:mx-20 p-5 md:p-10 flex md:items-center justify-around flex-col md:flex-row bg-[#11145B] rounded-t-md text-white">
-            <div>
-                <div class="flex items-center gap-6">
-                    <img src="./galery/logo brand.svg" alt="">
-                    <span class="text-2xl md:text-3xl">Meal Express</span>
+        <div class="w-full bg-[#11145B]">
+            <div class="mx-6  p-5 md:p-10 flex md:items-center justify-around flex-col md:flex-row rounded-t-md text-white">
+                <div>
+                    <div class="flex items-center gap-6">
+                        <img src="./galery/logo brand.svg" alt="">
+                        <span class="text-2xl md:text-3xl">Meal Express</span>
+                    </div>
+                    <h1 class="mt-10">ADDRESS</h1>
+                    <span>4517 Washington Ave. Manchester, Kentucky 39495</span>
                 </div>
-                <h1 class="mt-10">ADDRESS</h1>
-                <span>4517 Washington Ave. Manchester, Kentucky 39495</span>
-            </div>
-            <div class="mt-5 md:mt-0">
-                <h1 class="text-3xl">CONTACT</h1>
-                <div class="flex gap-3 mt-10">
-                    <img src="./galery/contact.svg" alt="">
-                    <span>+62 123 4567 8910</span>
-                </div>
-                <div class="flex gap-3">
-                    <img src="./galery/contact.svg" alt="">
-                    <span>+62 123 4567 8910</span>
-                </div>
-                <div class="flex gap-3">
-                    <img src="./galery/contact.svg" alt="">
-                    <span>+62 123 4567 8910</span>
+                <div class="mt-5 md:mt-0">
+                    <h1 class="text-3xl">CONTACT</h1>
+                    <div class="flex gap-3 mt-10">
+                        <img src="./galery/contact.svg" alt="">
+                        <span>+62 123 4567 8910</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <img src="./galery/contact.svg" alt="">
+                        <span>+62 123 4567 8910</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <img src="./galery/contact.svg" alt="">
+                        <span>+62 123 4567 8910</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -418,8 +477,15 @@
     <!-- Akhir Footer Section -->
 
 
-    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
 
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

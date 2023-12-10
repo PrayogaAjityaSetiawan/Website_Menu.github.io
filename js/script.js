@@ -7,10 +7,18 @@ btn.addEventListener('click', () => {
 });
 
 
-// Typing Text
-var typed = new Typed (".auto-text", {
-    strings: ["Web Developer", "Student"],
-    typeSpeed: 150,
-    backSpeed: 150,
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    autoplay: {
+        delay: 5000,
+    },
+    direction: 'horizontal',
     loop: true,
-})
+  
+    // If we need pagination
+    pagination: {
+      clickable: true,
+      el: '.swiper-pagination',
+    },
+
+  });
